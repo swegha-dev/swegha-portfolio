@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C. Swegha | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.logo{
+    font-size:32px;
+    color:#f472b6;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    color:#f472b6;
+}
+
+
+
+/* Hero */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#7c3aed,#ec4899);
+}
+
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+
+.hero h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+
+.hero p{
+    font-size:18px;
+    max-width:600px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+
+
+button{
+    padding:14px 35px;
+    margin:10px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#ec4899,#8b5cf6);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+button:hover{
+    transform:scale(1.08);
+}
+
+
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    color:#f472b6;
+    margin-bottom:40px;
+}
+
+
+
+/* About */
+
+#about p{
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    line-height:1.8;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+
+/* Skills */
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+
+.card{
+    width:170px;
+    padding:30px;
+    text-align:center;
+    background:#1e293b;
+    border-radius:20px;
+    font-weight:bold;
+    border:1px solid #334155;
+    transition:0.3s;
+}
+
+
+.card:hover{
+    background:linear-gradient(135deg,#7c3aed,#ec4899);
+    transform:translateY(-10px);
+}
+
+
+
+/* Education */
+
+.education-card{
+    background:#1e293b;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    border:1px solid #334155;
+}
+
+
+
+/* Projects */
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+
+.project-card{
+    width:300px;
+    padding:30px;
+    background:#1e293b;
+    border-radius:20px;
+    border:1px solid #334155;
+    transition:0.3s;
+}
+
+
+.project-card h3{
+    color:#f472b6;
+    margin-bottom:15px;
+}
+
+
+.project-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 30px rgba(236,72,153,0.3);
+}
+
+
+
+/* Contact */
+
+#contact{
+    text-align:center;
+}
+
+
+#contact p{
+    margin:15px;
+    font-size:18px;
+}
+
+
+
+/* Footer */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    color:#cbd5e1;
+}
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+
+    .navbar ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+
+    .hero h1{
+        font-size:35px;
+    }
+
+
+    .hero h2{
+        font-size:25px;
+
+
+</style>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Swegha</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Home Section -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Hi, I'm C. Swegha 👋</h1>
+
+        <h2>Frontend Developer</h2>
+
+        <p>
+            I create responsive and user-friendly websites
+            using HTML, CSS and JavaScript.
+        </p>
+
+        <a href="#projects">
+            <button>View Projects</button>
+        </a>
+
+        <a href="#contact">
+            <button>Contact Me</button>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- About Section -->
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am an ECE graduate and an aspiring Frontend Developer.
+        I enjoy building responsive and user-friendly websites using
+        HTML and CSS. I am currently learning JavaScript to improve
+        my web development skills.
+    </p>
+
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">C Programming</div>
+        <div class="card">Python</div>
+        <div class="card">MATLAB</div>
+        <div class="card">VS Code</div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Education Section -->
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-card">
+
+        <h3>B.E Electronics and Communication Engineering</h3>
+
+        <p>
+            Anjalai Ammal Mahalingam Engineering College,
+            Thiruvarur
+        </p>
+
+        <p>
+            CGPA: 8.2
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+
+    <div class="project-container">
+
+
+        <div class="project-card">
+
+            <h3>Coffee Shop Website</h3>
+
+            <p>
+                A responsive coffee shop website created using
+                HTML and CSS.
+            </p>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <h3>E-Commerce Website</h3>
+
+            <p>
+                An online shopping website with product
+                sections and user-friendly design.
+            </p>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <h3>SheSafe Website</h3>
+
+            <p>
+                A women safety awareness website built using
+                HTML and CSS.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>Email: sweghac@gmail.com</p>
+
+    <p>Phone: 9790534174</p>
+
+</section>
+
+
+
+<footer>
+
+    <p>
+        © 2026 C. Swegha | Frontend Developer
+    </p>
+
+</footer>
+
+
+</body>
+</html>
